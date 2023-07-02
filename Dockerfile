@@ -1,7 +1,7 @@
 FROM node:16
-WORKDIR /app
-COPY . /app
+WORKDIR /
+COPY . /
 RUN npm install
 CMD ["npm", "start"]
-EXPOSE 3000/tcp
-HEALTHCHECK NONE
+EXPOSE 8080/tcp
+#  HEALTHCHECK NONE
