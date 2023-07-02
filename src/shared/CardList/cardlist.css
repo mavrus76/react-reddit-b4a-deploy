@@ -1,0 +1,18 @@
+.button {
+  position: absolute;
+  left: 50%;
+  border-radius: 4px;
+  padding: 10px 20px;
+  font-size: 18px;
+  color: var(--white);
+  background-color: var(--orange);
+  transform: translateX(-50%);
+}
+.button:hover {
+  opacity: 0.7;
+}
+@media all and (min-width: 1024px) {
+  .cardList {
+    padding: 40px 0;
+  }
+}

@@ -1,0 +1,11 @@
+# gitignore
+.DS_Store
+.idea
+.vscode
+node_modules/
+dev/
+build/
+dist/
+
+# Local Netlify folder
+.netlify

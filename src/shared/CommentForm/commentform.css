@@ -1,0 +1,52 @@
+.form {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: end;
+}
+.label {
+  width: 100%;
+}
+.input {
+  border: 1px solid var(--greyD9);
+  border-radius: 3px 3px 0px 0px;
+  width: 100%;
+  padding: 16px 18px;
+  font-size: 16px;
+  line-height: 19px;
+  resize: none;
+  transition: all 0.3 ease-in-out;
+}
+.input[aria-invalid] {
+  border-color: red;
+}
+.input:focus {
+  outline: none;
+  border-color: blue;
+}
+.input:hover {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+.input:active {
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+}
+.error {
+  display: flex;
+  align-items: center;
+  margin: -3px 30px 0 0;
+  color: red;
+}
+.button {
+  margin: -3px 0 0 0;
+  border-radius: 0px 0px 3px 0px;
+  padding: 17px 50px;
+  color: var(--white);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  background-color: var(--orange);
+}
+.button:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
