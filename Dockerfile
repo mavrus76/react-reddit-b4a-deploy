@@ -3,4 +3,4 @@ WORKDIR /app
 COPY . /app
 RUN npm install
 CMD ["npm", "start"]
-EXPOSE 8080/tcp
+EXPOSE 8000/tcp
