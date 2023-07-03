@@ -6,13 +6,13 @@ ARG APP_DIR=app
 WORKDIR /${APP_DIR}
 
 # Установка зависимостей
-# COPY package*.json ./
+COPY package*.json ./
 # RUN npm install
 # Для использования в продакшне
 RUN npm install --production
 
 # Копирование файлов проекта
-COPY . /${APP_DIR}
+COPY . /
 
 # Уведомление о порте, который будет прослушивать работающее приложение
 EXPOSE 3000
