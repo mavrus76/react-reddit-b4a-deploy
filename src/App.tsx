@@ -50,7 +50,7 @@ function AppComponent() {
                     <Route path='/posts/:id'>
                       <Post />
                     </Route>
-                    <Route path='/posts'>
+                    <Route path='/'>
                       <CardList />
                     </Route>
                     <Route path='*'>
