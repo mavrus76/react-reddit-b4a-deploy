@@ -15,9 +15,10 @@ RUN npm ci
 COPY . .
 
 RUN npm run build
+RUN npm install -g serve
 
 # Уведомление о порте, который будет прослушивать работающее приложение
-EXPOSE 3000
+EXPOSE 5000
 
 # Запуск проекта
 CMD ["npm", "start"]
