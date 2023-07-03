@@ -26,7 +26,7 @@ app.get('/auth', (req, res) => {
   axios
     .post(
       'https://www.reddit.com/api/v1/access_token',
-      `grant_type=authorization_code&code=${req.query.code}&redirect_uri=https://reactredditb4adeploy4-mav76rus.b4a.run/`,
+      `grant_type=authorization_code&code=${req.query.code}&redirect_uri=https://reactredditb4adeploy4-mav76rus.b4a.run/auth`,
       {
         auth: {
           username: process.env.CLIENT_ID,
