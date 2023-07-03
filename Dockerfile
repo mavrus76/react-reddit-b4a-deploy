@@ -1,4 +1,6 @@
 FROM node:16
+ENV CLIENT_ID=Ycsf45snRpRCEXTbeXfzPA
+ENV SECRET=WbxMfydHkb-72uFdNC5lKv7jzj6oAg
 
 # Папка приложения
 ARG APP_DIR=app
