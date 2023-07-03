@@ -15,7 +15,6 @@ RUN npm ci
 COPY . .
 
 RUN npm run build
-RUN npm install -g serve
 
 # Уведомление о порте, который будет прослушивать работающее приложение
 EXPOSE 5000
