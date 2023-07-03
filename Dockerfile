@@ -12,7 +12,7 @@ COPY package*.json ./
 RUN npm install --production
 
 # Копирование файлов проекта
-COPY . /
+COPY . /app
 
 # Уведомление о порте, который будет прослушивать работающее приложение
 EXPOSE 3000
