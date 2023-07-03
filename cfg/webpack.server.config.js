@@ -57,16 +57,6 @@ module.exports = {
       {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
         use: [
-          // {
-          //   loader: 'file-loader',
-          //   options: {
-          //     name: `[name].[contenthash].[ext]`,
-          //     publicPath: 'images',
-          //     outputPath: 'images',
-          //     useRelativePath: true,
-          //     esModule: false,
-          //   },
-          // },
           'url-loader?limit=10000',
           {
             loader: 'img-loader',
