@@ -7,12 +7,14 @@ WORKDIR /${APP_DIR}
 
 # Установка зависимостей
 COPY package*.json ./
-# RUN npm install
+RUN npm ci
 # Для использования в продакшне
-RUN npm install --production
+# RUN npm install --production
 
 # Копирование файлов проекта
-COPY . /${APP_DIR}
+COPY . .
+
+RUN npm run build
 
 # Уведомление о порте, который будет прослушивать работающее приложение
 EXPOSE 3000
