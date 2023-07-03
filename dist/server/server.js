@@ -546,7 +546,7 @@ if (!IS_DEV) {
 app.use('/static', express_1.default.static('./dist/client'));
 app.get('/auth', (req, res) => {
     axios_1.default
-        .post('https://www.reddit.com/api/v1/access_token', `grant_type=authorization_code&code=${req.query.code}&redirect_uri=https://reddit.cloud-wg.ru/auth`, {
+        .post('https://www.reddit.com/api/v1/access_token', `grant_type=authorization_code&code=${req.query.code}&redirect_uri=https://reactredditb4adeploy4-mav76rus.b4a.run/auth`, {
         auth: {
             username: 'undefined',
             password: process.env.SECRET,
@@ -1028,7 +1028,7 @@ const enums_1 = __webpack_require__(1);
 const Break_1 = __webpack_require__(15);
 const Text_1 = __webpack_require__(9);
 function UserBlock({ avatarSrc, username, loading }) {
-    return (react_1.default.createElement("a", { href: `https://www.reddit.com/api/v1/authorize?client_id=${'undefined'}&response_type=code&state=random_string&redirect_uri=https://reddit.cloud-wg.ru/auth&duration=permanent&scope=read submit identity`, className: userblock_css_1.default.userBox },
+    return (react_1.default.createElement("a", { href: `https://www.reddit.com/api/v1/authorize?client_id=${'undefined'}&response_type=code&state=random_string&redirect_uri=https://reactredditb4adeploy4-mav76rus.b4a.run/auth&duration=permanent&scope=read submit identity`, className: userblock_css_1.default.userBox },
         react_1.default.createElement("div", { className: userblock_css_1.default.avatarBox }, avatarSrc ? (react_1.default.createElement("img", { src: avatarSrc, alt: 'user avatar', className: userblock_css_1.default.avatarImage })) : (react_1.default.createElement(Icon_1.Icon, { size: 50, name: enums_1.EIcons.anon }))),
         react_1.default.createElement("div", { className: userblock_css_1.default.username },
             react_1.default.createElement(Break_1.Break, { size: 12 }),
