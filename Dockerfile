@@ -1,5 +1,5 @@
 FROM node:16
-WORKDIR ../dist
+WORKDIR /
 COPY . /
 RUN npm install
 CMD ["npm", "start"]
