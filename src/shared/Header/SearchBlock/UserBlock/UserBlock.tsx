@@ -14,7 +14,7 @@ interface IUserBlockProps {
 export function UserBlock({ avatarSrc, username, loading }: IUserBlockProps) {
   return (
     <a
-      href={`https://www.reddit.com/api/v1/authorize?client_id=${process.env.CLIENT_ID}&response_type=code&state=random_string&redirect_uri=https://reactredditb4adeploy4-mav76rus.b4a.run/auth&duration=permanent&scope=read submit identity`}
+      href='https://www.reddit.com/api/v1/authorize?client_id=Ycsf45snRpRCEXTbeXfzPA&response_type=code&state=random_string&redirect_uri=https://reactredditb4adeploy4-mav76rus.b4a.run/auth&duration=permanent&scope=read submit identity'
       className={styles.userBox}>
       <div className={styles.avatarBox}>
         {avatarSrc ? (
