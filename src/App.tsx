@@ -47,11 +47,11 @@ function AppComponent() {
                 <Header />
                 <Content>
                   <Switch>
-                    <Route path='/posts/:id'>
-                      <Post />
-                    </Route>
                     <Route path='/'>
                       <CardList />
+                      <Route path='/posts/:id'>
+                        <Post />
+                      </Route>
                     </Route>
                     <Route path='*'>
                       <Page404 />
