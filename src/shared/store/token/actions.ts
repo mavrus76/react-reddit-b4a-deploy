@@ -36,12 +36,14 @@ export const tokenRequestError: ActionCreator<TTokenRequestErrorAction> = (
 export const saveToken = (): TThunkActionAsync => (dispatch, getState) => {
   try {
     dispatch(tokenRequest());
+    const token = window.__token__;
+    dispatch(tokenRequestSuccess(token));
     // localStorage.clear();
-    const token = localStorage.getItem('token') || window.__token__;
-    if (token && token !== 'undefined') {
-      localStorage.setItem('token', token);
-      dispatch(tokenRequestSuccess(token));
-    }
+    // const token = localStorage.getItem('token') || window.__token__;
+    // if (token && token !== 'undefined') {
+    //   localStorage.setItem('token', token);
+    //   dispatch(tokenRequestSuccess(token));
+    // }
   } catch (error) {
     dispatch(tokenRequestError(String(error)));
   }
